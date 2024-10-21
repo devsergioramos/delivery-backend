@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 
-from database import create_db_and_tables, engine
 from sqlmodel import Session
-from models import Restaurantes
+
+from app.database import create_db_and_tables, engine
+from app.models import Restaurantes
 
 app = FastAPI()
 
